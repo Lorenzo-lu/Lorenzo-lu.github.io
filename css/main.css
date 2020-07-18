@@ -56,6 +56,7 @@ ul.posts li {
 Index_home{
     font-family:'Times', 'Arial', 'Sans-Serif';
     font-size: 1em;
-    color: purple;
+    color: white;
     font-weight: bold;
+    //text-decoration: underline
 }
