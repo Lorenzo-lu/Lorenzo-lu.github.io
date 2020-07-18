@@ -1,29 +1,35 @@
 body {
     margin: 60px auto;
     width: 70%;
+    //background-image: url("/Photo/Chicago_dove.png");
+    background-size: 100%; 
+    background-repeat: no-repeat
 }
 nav ul, footer ul {
     font-family:'times', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
-    font-weight: bold;
+    //font-weight: bold;
 }
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
 }
 a {
-    font-family:'times', 'Arial', 'Sans-Serif';
-    text-decoration: none;
-    color: #999;
+    font-family:'Times', 'Arial', 'Sans-Serif';
+    text-decoration: None;
+    font-size: 1em;
+    //color: rgb(60, 11, 238);    
+    //color: #999;    
 }
-/*a:hover {
+a:hover {
     text-decoration: underline;
-}*/
+}
 h1 {
     font-size: 2em;
-    font-family:'times', 'Arial', 'Sans-Serif';
+    font-family:'Times', 'Arial', 'Sans-Serif';
     font-weight: bold;
+    //color: green
 }
 p {
     font-family:'times', 'Arial', 'Sans-Serif';
@@ -47,4 +53,10 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+}
+
+Index_home{
+    font-family:'Times', 'Arial', 'Sans-Serif';
+    font-size: 1em;
+    color: purple;
 }
