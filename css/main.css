@@ -8,8 +8,7 @@ body {
 nav ul, footer ul {
     font-family:'times', 'Arial', 'Sans-Serif';
     padding: 0px;
-    list-style: none;
-    //font-weight: bold;
+    list-style: none;    
 }
 nav ul li, footer ul li {
     display: inline;
@@ -19,8 +18,7 @@ a {
     font-family:'Times', 'Arial', 'Sans-Serif';
     text-decoration: None;
     font-size: 1em;
-    //color: rgb(60, 11, 238);    
-    //color: #999;    
+        
 }
 a:hover {
     text-decoration: underline;
@@ -58,5 +56,6 @@ ul.posts li {
 Index_home{
     font-family:'Times', 'Arial', 'Sans-Serif';
     font-size: 1em;
-    //color: white;
+    color: purple;
+    font-weight: bold;
 }
