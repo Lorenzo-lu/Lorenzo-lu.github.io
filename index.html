@@ -13,18 +13,20 @@
         margin-right: 10px;        
     }
     .block p {
-        /*width: 200px;
-        height: 100px;
+        //float:right;
+        //width: 80%;
+        //height: 100px;
         line-height: 20px;
-        overflow: hidden;*/
+        overflow: hidden;
     }
+    .clear{ clear:both} //start another div from new row: <div class="clear"></div>
 </style>
 
 <body>
 	<nav>
 		<ul>
             <div style="position:relative;">
-            <img border = "0" src = "/Photo/Madison.jpg" width = 100%>
+            <img border = "0" src = "/Photo/Mendota.jpg" width = 100%>
             <div style="position:absolute; z-index:2; left:5%; top:5%">
                 <li><a href="/"><Index_home>Home</Index_home></a></li>
                 <li><a href="/About/Interests.html"><Index_home>About</Index_home></a></li>
@@ -41,24 +43,23 @@
 		</ul>
 	</nav>
     <hr>
-    <div style="border: 0px solid #000">
-	<div class="container">
-		<div class="blurb">			
-             </h1>
-             <div class = "block">
-                 <img border="0" src="/Photo/self.png" width = "120" height = "160"></img>
-				<p>I'm translating Fluoresence Lifetime Imaging Microscopy (FLIM) into cancer diagnosis. <a href="/About/About.html">Read more about FLIM...</a></p>   
-                </div>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		
-
-       <!-- </small></h3> -->
-                <h4>Now I am pursuing a PhD in Electrical Engineering...</h4> 
+    <!-- <div style="border: 0px solid #000"> -->
+        <div style = 'width:80%'>      
+        <div class = "block">
+            <img border="0" src="/Photo/self.png" width = "120" height = "160"></img>
+            <p>I'm translating Fluoresence Lifetime Imaging Microscopy (FLIM) into cancer diagnosis. <a href="/About/About.html">Read more about FLIM...</a></p>  
+        </div>   	
+        </div>	
+	
+        
+		<div class="clear" ></div><!-- 用该指令分隔div -->
+        <hr>
+        <div style = "width:80%">
+             <h4>Now I am pursuing a PhD in Electrical Engineering...</h4> 
                 <p align="justify">I received the M.S. degree in Materials Science and Engineering from the University of Wisconsin-Madison, Madison, WI in 2019. I am working on Fluorenscence Lifetime Imaging Microscopy.</p>
-            <!-- </div>
-        </div> -->
-    </div>
+            
+        </div>
+    
 <hr>
 
 		
