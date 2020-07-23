@@ -33,7 +33,7 @@ p {
     font-family:'times', 'Arial', 'Sans-Serif';
     font-size: 1em;
     line-height: 1.4em;
-    color: #333;
+    color: rgb(66, 1, 47);
 }
 footer {
     border-top: 1px solid #d5d5d5;
