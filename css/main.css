@@ -3,8 +3,8 @@ html{
     margin: 0 0%;
     border: 0px;
     height: 100%;
-    background-image: url("/Photo/WallPaper.jpg");
-    background-attachment:fixed; // background no move
+    background-image: url("/Photo/WallPaper.jpg");background-attachment:fixed;
+    font-family: 'arial'
     
 }
 
@@ -25,7 +25,7 @@ body {
 
 
 nav ul, footer ul {
-    font-family:'Arial','times',  'Sans-Serif';
+    //font-family:'Arial','times',  'Sans-Serif';
     padding: 0px;
     list-style: none;   
     margin-top: 0px;
@@ -35,7 +35,7 @@ nav ul li, footer ul li {
     margin-right: 20px; //保证链接之间有空档
 }
 a {
-    font-family:'Arial', 'Times',  'Sans-Serif';
+    //font-family:'Arial', 'Times',  'Sans-Serif';
     text-decoration: None;
     font-size: 1em;
         
@@ -45,12 +45,12 @@ a:hover {
 }
 h1 {
     font-size: 2em;
-    font-family:'Arial','Times',  'Sans-Serif';
+    //font-family:'Times','Times',  'Sans-Serif';
     font-weight: bold;
     //color: green
 }
 p {
-    font-family:'Arial', 'times',  'Sans-Serif';
+    //font-family:'Arial', 'times',  'Sans-Serif';
     font-size: 1em;
     line-height: 1.4em;
     color: rgb(66, 1, 47);
@@ -59,11 +59,11 @@ footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
     margin: 2% 3%;
-    Text-align: center;
+    text-align: center;
 }
 
 h4 {
-    font-family:'Arial', 'times';
+    //font-family:'Arial', 'times';
     font-size: 1em;
 }
 ul.posts { 
@@ -76,7 +76,7 @@ ul.posts li {
 }
 
 Index_home{
-    font-family:'Arial', 'Times',  'Sans-Serif';
+    //font-family:'Arial', 'Times',  'Sans-Serif';
     font-size: 1em;
     color: purple;
     font-weight: none;
@@ -84,7 +84,7 @@ Index_home{
 }
 
 li{
-font-family:'Arial', 'Times',  'Sans-Serif';
+//font-family:'Arial', 'Times',  'Sans-Serif';
 }
 
 .SomeEdge{
