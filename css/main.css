@@ -4,6 +4,7 @@ html{
     border: 0px;
     height: 100%;
     background-image: url("/Photo/WallPaper.jpg");
+    background-attachment:fixed; // background no move
     
 }
 
