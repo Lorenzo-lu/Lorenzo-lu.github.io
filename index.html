@@ -19,16 +19,18 @@
         //line-height: 20px;
         overflow: hidden;
     }
-    .clear{ clear:both} //start another div from new row: <div class="clear"></div>
+    .clear{clear:both;} //start another div from new row: <div class="clear"></div>
 </style>
 
-<body>
-    
-	<nav>
-		<ul > <!-- put li into a row-->
-            <div style="position:relative;" >
-            <img border = "0" src = "/Photo/Chicago_Skyline.jpg" width = "100%" title = "The City of Chicago by Lorenzo">
+
+    <body>
+       <header> 
+        <nav>
+            <ul > <!-- put li into a row-->
+            
+            <img border = "0px" src = "/Photo/Chicago_Skyline.jpg" width = "100%"  title = "The City of Chicago by Lorenzo" >
             <div style="position:absolute; z-index:2; left:5%; top:5%">
+                
                 <li><a href="/"><Index_home>Home</Index_home></a></li>
                 <li><a href="/About/Interests.html"><Index_home>About</Index_home></a></li>
                 <li><a href="/CV/CV_2020_sep.pdf" target = "blank"><Index_home>CV</Index_home></a></li>
@@ -38,21 +40,21 @@
                 <li><a href="/blog"><Index_home>Blog</Index_home></a></li>
                 
                 <li><a href="/Publications/Publications.html"><Index_home>Publications</Index_home></a></li>
-                <li><a href="/Maths/Maths_dict.html"><Index_home>MathsDict</Index_home></a></li>                
+                <li><a href="/Maths/Maths_dict.html"><Index_home>MathsDict</Index_home></a></li>           
+
+                
             </div>
             
             <div style="position:absolute; z-index:2; left:5%; top:80%">
                 <h1 style="color: white; font-size: 24px" >Hi there, I'm Lorenzo!</h1>
             </div>
             
-            </div>
-		</ul>
-	</nav>
-
+            
+            </ul>
+        </nav>
+    </header>
     <!--
-    <hr>
-
-    
+    <hr>    
         <div><h4><a>Updates</a></h4></div>
         
             <div>
@@ -65,13 +67,13 @@
                 
             </div>
         <p> The comet Neowise is closest to us tonight!</p>
-     -->   
+     -->       
 
     
-    <div class="clear" ></div>
     
     <!-- <div style="border: 1px solid #000"> -->
-    <div class = 'SomeEdge'>    <!-- 避免顶格 -->
+    <div class = 'whiteboard'>    <!-- 避免顶格 -->
+        
         <div class = "block">
             <img border="0" src="/Photo/self.png" width = "120" height = "160" ></img>
             <div style = 'text-align: left; width:100%'>
@@ -148,7 +150,10 @@
             <h4>
             Computational Optics Group, the University of Wisconsin-Madison
             </h4>
-            <br>
+
+            <div style = 'font-size:0.5em'>
+            © 2021 Lorenzo Lu 
+            </div>
 		</footer>
 
     </body>

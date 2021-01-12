@@ -11,6 +11,7 @@ html{
 body {
     border: 0;
     margin: 0px 20% 0px;
+    padding: 0px;
     
     /*margin-bottom: 15%;
     margin-left: 20%;
@@ -31,10 +32,12 @@ nav ul, footer ul {
     padding: 0px;
     list-style: none;   
     margin-top: 0px;
+    margin-bottom: 0px;
 }
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px; /*保证链接之间有空档*/
+    padding: 0px;
 }
 a {
     /*font-family:'Arial', 'Times',  'Sans-Serif';*/
@@ -55,19 +58,45 @@ p {
     /*font-family:'Arial', 'times',  'Sans-Serif';*/
     font-size: 1em;
     line-height: 1.4em;
-    color: rgb(66, 1, 47);
+    color: rgb(0, 0, 0);
 }
+
+header{
+    position: relative;
+    
+    /*
+    position: absolute;
+    top: 0%;
+    
+    left: 20%;     
+    right: 20%;
+    */
+    
+    background-color: white;
+}
+
 footer {
     clear: both;
+    
     /*border-top: 0.75em solid #d5d5d5;
     border-bottom: 0.75em solid #d5d5d5;*/
     font-size: .8em;
-    /*margin: 5% 0%;*/
-    margin-top: 5%;
+    /*margin: 5% 0%;
+    margin-top: 5%;*/
+    padding: 3% 0%;
     
     text-align: center;
-    /*background-color: #d5d5d5;*/
-    position:relative;     
+    background-color: #d5d5d5;
+    position:relative;
+
+    /*
+    position: sticky;
+    top: 90%;
+    bottom: 0%;
+    left: 20%;     
+    right: 20%;
+    background-color: #d5d5d5;
+    */    
 }
 
 h4 {
@@ -88,6 +117,8 @@ Index_home{
     font-size: 1em;
     color: purple;
     font-weight: none;
+    padding : 0;
+    margin: 0;
     /*text-decoration: underline */
 }
 
@@ -95,8 +126,9 @@ li{
 /*font-family:'Arial', 'Times',  'Sans-Serif'; */
 }
 
-.SomeEdge{
-    padding: 3% 3% ; 
-       
-    background-color: white;
+.whiteboard{
+    padding: 2% 3% ; 
+    margin: 0% 0%;
+    
+    background-color:  white;
 }
