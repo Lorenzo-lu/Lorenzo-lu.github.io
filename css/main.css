@@ -67,8 +67,13 @@ nav ul li, footer ul li {
 a {
     /*font-family:'Arial', 'Times',  'Sans-Serif';*/
     text-decoration: None;
-    font-size: 1em;
-        
+    font-size: 1em;        
+}
+a:link {
+    color: blue;
+}
+a:visited{
+    color : purple;
 }
 a:hover {
     text-decoration: underline;
