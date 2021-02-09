@@ -3,8 +3,13 @@ html{
     margin: 0 0%;
     border: 0px;
     height: 100%;
-    background-image: url("/Photo/WallPaper.jpg");background-attachment:fixed;
-    font-family:  'Verdana', 'Arial' , 'Times';
+    background-image: url("/Photo/WallPaper5.jpg");
+    //background-image: url("/Logos/compass.png");
+    background-size: 40%;
+    /*background-repeat: no-repeat;*/
+    background-attachment:fixed;
+
+    font-family:  'tahoma', 'Comic Sans MS', 'Tahoma', 'verdana', 'Arial','helvetica', 'Times', 'Palatino','courier','georgia';
     font-size: 14px;
 }
 
@@ -19,7 +24,7 @@ body {
     padding: 0;
     /*float: left;
     /overflow: visible;*/
-    background: inherit;
+    //background: inherit;
 
     margin-left: auto;
 	margin-right: auto;
@@ -73,10 +78,13 @@ a:link {
     color: blue;
 }
 a:visited{
-    color : purple;
+    color : blue;
 }
 a:hover {
     text-decoration: underline;
+    //color:white;
+    /*display: none;*/
+    //background: gold;
 }
 h1 {
     font-size: 2em;
@@ -162,3 +170,30 @@ li{
     
     background-color:  white;
 }
+
+.sidebar{
+    position: fixed;
+    top: 20%;    
+    left: 5%;     
+    right: 75%;
+    word-wrap: break-word;
+    color: white;
+    display:none;
+    /*background-color: white;*/
+}
+.sidebar-list {
+  margin: 0px;
+  border: 0px;
+  display:none; 
+  color:white;
+  
+}
+
+.sidebar:hover>.sidebar-list{  
+    display:block;  
+}
+sidebar_item{
+    color:white;    
+}
+
+
