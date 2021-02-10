@@ -37,14 +37,22 @@ function fixDate(date) {
     if (skew > 0)
         date.setTime(date.getTime() - skew)
 }
+
 var now = new Date()
+var origin = new Date()
+origin.setTime(0)
+fixDate(origin)
+
+var cycle = 24 * 60 * 60 * 1000 // 1 day
+var remainder = (now.getTime() - (origin.getTime() + 6 * 60 * 60 * 1000))%cycle
 fixDate(now)
-now.setTime(now.getTime() + 365 * 24 * 60 * 60 * 1000)
+now.setTime(now.getTime() + remainder)
 var visits = getCookie("counter")
 if (!visits)
     visits = 1
 else
     visits = parseInt(visits) + 1
 setCookie("counter", visits, now)
-document.write("total visits:" + visits)
+document.write("visits today:" + visits)
+
 //document.write("\n" + now.getTime())
