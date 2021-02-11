@@ -43,7 +43,7 @@ var origin = new Date()
 origin.setTime(0)
 fixDate(origin)
 
-var cycle = 24 * 60 * 60 * 1000 // 1 day
+var cycle = 10 * 1000 // 1 day
 var remainder = (now.getTime() - (origin.getTime() + 6 * 60 * 60 * 1000))%cycle
 fixDate(now)
 now.setTime(now.getTime() + remainder)
