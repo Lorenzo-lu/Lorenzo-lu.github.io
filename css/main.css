@@ -196,3 +196,16 @@ sidebar_item{
 }
 
 
+.block img {
+        float: right;
+        margin-left: 2%;
+        //margin-right: 3%; 
+}
+.block p {
+    //float:right;
+    //width: 80%;
+    //height: 100px;
+    //line-height: 20px;
+    overflow: hidden;
+}
+.clear{clear:both;} //start another div from new row: <div class="clear"></div>

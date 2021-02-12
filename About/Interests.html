@@ -1,33 +1,12 @@
 <!DOCTYPE html>
 <html>
+<script  src = " /JavaScripts/get_templates/includeHTML.js">
+</script>
 
-<head>
-	<title>About</title>
-	<!-- link to main stylesheet -->
-	<link rel="stylesheet" type="text/css" href="/css/main.css">
-</head>
+<div w3-include-html="/Templates/head.html"></div>
 
 <body>
-
-<header> 
-        <nav>
-            <ul > <!-- put li into a row-->
-            
-            <img border = "0px" src = "/Photo/Chicago_Skyline.jpg" width = "100%"  title = "The City of Chicago by Lorenzo" >
-
-            
-            <div style="position:absolute; z-index:2; left:5%; top:5%">
-                <li><a href="/"><img border="0" src="/Logos/Home_logo.png" width = "20px" height = "20px"></a></li>
-            </div>
-            
-            <div style="position:absolute; z-index:2; left:5%; top:80%">
-                <h1 style="color: white; font-size: 24px" >Hi there, I'm Lorenzo!</h1>
-            </div>
-            
-            
-            </ul>
-        </nav>
-    </header>
+    <div w3-include-html="/Templates/header.html"></div>
 
 <div class = 'whiteboard'>
 <h1 style="text-align:center">
@@ -45,11 +24,8 @@ Fluorensence Imaging
 </body>
 
 
-<footer>
-	<ul>
-		<li><a href="/"><img border="0" src="/Logos/Home_logo.png" width = "20px" height = "20px"></a></li>
-
-</ul>
-</footer>
-
+ <div w3-include-html="/Templates/footer_secondary.html"></div> 
+<script>
+includeHTML();
+</script>
 </html>
