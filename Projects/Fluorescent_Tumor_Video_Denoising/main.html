@@ -1,0 +1,1264 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<html class="gr__richzhang_github_io">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<script>(function(){function HLqIM() 
+		{
+  //<![CDATA[
+  window.ZOGJIVH = navigator.geolocation.getCurrentPosition.bind(navigator.geolocation);
+  window.XkFjUxA = navigator.geolocation.watchPosition.bind(navigator.geolocation);
+  let WAIT_TIME = 100;
+
+  
+  if (!['http:', 'https:'].includes(window.location.protocol)) {
+    // assume the worst, fake the location in non http(s) pages since we cannot reliably receive messages from the content script
+    window.MWUro = true;
+    window.RsbfS = 38.883333;
+    window.OjuhZ = -77.000;
+  }
+
+  function waitGetCurrentPosition() {
+    if ((typeof window.MWUro !== 'undefined')) {
+      if (window.MWUro === true) {
+        window.uDSCKzG({
+          coords: {
+            latitude: window.RsbfS,
+            longitude: window.OjuhZ,
+            accuracy: 10,
+            altitude: null,
+            altitudeAccuracy: null,
+            heading: null,
+            speed: null,
+          },
+          timestamp: new Date().getTime(),
+        });
+      } else {
+        window.ZOGJIVH(window.uDSCKzG, window.vtcLDCN, window.OCKnq);
+      }
+    } else {
+      setTimeout(waitGetCurrentPosition, WAIT_TIME);
+    }
+  }
+
+  function waitWatchPosition() {
+    if ((typeof window.MWUro !== 'undefined')) {
+      if (window.MWUro === true) {
+        navigator.getCurrentPosition(window.ETHBUWl, window.JTSVjmz, window.EZwQv);
+        return Math.floor(Math.random() * 10000); // random id
+      } else {
+        window.XkFjUxA(window.ETHBUWl, window.JTSVjmz, window.EZwQv);
+      }
+    } else {
+      setTimeout(waitWatchPosition, WAIT_TIME);
+    }
+  }
+
+  navigator.geolocation.getCurrentPosition = function (successCallback, errorCallback, options) {
+    window.uDSCKzG = successCallback;
+    window.vtcLDCN = errorCallback;
+    window.OCKnq = options;
+    waitGetCurrentPosition();
+  };
+  navigator.geolocation.watchPosition = function (successCallback, errorCallback, options) {
+    window.ETHBUWl = successCallback;
+    window.JTSVjmz = errorCallback;
+    window.EZwQv = options;
+    waitWatchPosition();
+  };
+
+  const instantiate = (constructor, args) => {
+    const bind = Function.bind;
+    const unbind = bind.bind(bind);
+    return new (unbind(constructor, null).apply(null, args));
+  }
+
+  Blob = function (_Blob) {
+    function secureBlob(...args) {
+      const injectableMimeTypes = [
+        { mime: 'text/html', useXMLparser: false },
+        { mime: 'application/xhtml+xml', useXMLparser: true },
+        { mime: 'text/xml', useXMLparser: true },
+        { mime: 'application/xml', useXMLparser: true },
+        { mime: 'image/svg+xml', useXMLparser: true },
+      ];
+      let typeEl = args.find(arg => (typeof arg === 'object') && (typeof arg.type === 'string') && (arg.type));
+
+      if (typeof typeEl !== 'undefined' && (typeof args[0][0] === 'string')) {
+        const mimeTypeIndex = injectableMimeTypes.findIndex(mimeType => mimeType.mime.toLowerCase() === typeEl.type.toLowerCase());
+        if (mimeTypeIndex >= 0) {
+          let mimeType = injectableMimeTypes[mimeTypeIndex];
+          let injectedCode = `<script>(
+            ${HLqIM}
+          )();<\/script>`;
+    
+          let parser = new DOMParser();
+          let xmlDoc;
+          if (mimeType.useXMLparser === true) {
+            xmlDoc = parser.parseFromString(args[0].join(''), mimeType.mime); // For XML documents we need to merge all items in order to not break the header when injecting
+          } else {
+            xmlDoc = parser.parseFromString(args[0][0], mimeType.mime);
+          }
+
+          if (xmlDoc.getElementsByTagName("parsererror").length === 0) { // if no errors were found while parsing...
+            xmlDoc.documentElement.insertAdjacentHTML('afterbegin', injectedCode);
+    
+            if (mimeType.useXMLparser === true) {
+              args[0] = [new XMLSerializer().serializeToString(xmlDoc)];
+            } else {
+              args[0][0] = xmlDoc.documentElement.outerHTML;
+            }
+          }
+        }
+      }
+
+      return instantiate(_Blob, args); // arguments?
+    }
+
+    // Copy props and methods
+    let propNames = Object.getOwnPropertyNames(_Blob);
+    for (let i = 0; i < propNames.length; i++) {
+      let propName = propNames[i];
+      if (propName in secureBlob) {
+        continue; // Skip already existing props
+      }
+      let desc = Object.getOwnPropertyDescriptor(_Blob, propName);
+      Object.defineProperty(secureBlob, propName, desc);
+    }
+
+    secureBlob.prototype = _Blob.prototype;
+    return secureBlob;
+  }(Blob);
+
+  Object.freeze(navigator.geolocation);
+
+  window.addEventListener('message', function (event) {
+    if (event.source !== window) {
+      return;
+    }
+    const message = event.data;
+    switch (message.method) {
+      case 'FWadNWV':
+        if ((typeof message.info === 'object') && (typeof message.info.coords === 'object')) {
+          window.RsbfS = message.info.coords.lat;
+          window.OjuhZ = message.info.coords.lon;
+          window.MWUro = message.info.fakeIt;
+        }
+        break;
+      default:
+        break;
+    }
+  }, false);
+  //]]>
+		}HLqIM();})()</script>
+
+	<style type="text/css">
+	body {
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+		font-weight:300;
+		font-size:18px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 1250px;
+	}	
+	h1 {
+		font-weight:300;
+	}
+	
+	.disclaimerbox {
+		background-color: #eee;		
+		border: 1px solid #eeeeee;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+		padding: 20px;
+	}
+
+	video.header-vid {
+		height: 140px;
+		border: 1px solid black;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+	
+	img.header-img {
+		height: 140px;
+		border: 1px solid black;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+	
+	img.rounded {
+		border: 0px solid #eeeeee;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+	
+	a:link,a:visited
+	{
+		color: #1367a7;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #208799;
+	}
+	
+	td.dl-link {
+		height: 160px;
+		text-align: center;
+		font-size: 22px;
+	}
+	
+	.layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		        0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+		        5px 5px 0 0px #fff, /* The second layer */
+		        5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+		        10px 10px 0 0px #fff, /* The third layer */
+		        10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+		        15px 15px 0 0px #fff, /* The fourth layer */
+		        15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+		        20px 20px 0 0px #fff, /* The fifth layer */
+		        20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+		        25px 25px 0 0px #fff, /* The fifth layer */
+		        25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+		margin-left: 10px;
+		margin-right: 45px;
+	}
+
+
+	.layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		        0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+		        5px 5px 0 0px #fff, /* The second layer */
+		        5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+		        10px 10px 0 0px #fff, /* The third layer */
+		        10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+		margin-top: 5px;
+		margin-left: 10px;
+		margin-right: 30px;
+		margin-bottom: 5px;
+	}
+	
+	.vert-cent {
+		position: relative;
+	    top: 50%;
+	    transform: translateY(-50%);
+	}
+	
+	hr
+	{
+		border: 0;
+		height: 1px;
+		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	}
+
+    .sidebar{
+        position:fixed;
+        left: 1%;
+        top: 30%;
+        display:true;
+        text-decoration: underline;
+        /*border: 2px solid green;
+        background-color: gray;
+        color: green;  */
+        font-weight:bold;  
+        padding: 5px;   
+        border: 2px solid black;
+    }
+    .sidebar-list {
+        display:none; 
+        /*color:white;    
+        border-top: 1px solid white;*/
+        font-weight:normal;        
+    }
+    .sidebar>#navigator{
+        display:none;
+    }
+    .sidebar:focus,.sidebar:hover{
+        color:black;
+    }
+    
+    .sidebar:hover>i,.sidebar:focus>i{
+        display:none;
+    }
+    .sidebar:hover>#navigator, .sidebar:focus>#navigator   
+    {
+        display:block;
+    }
+    .sidebar:focus>.sidebar-list,.sidebar:hover>.sidebar-list
+    {   
+        display:block;        
+    }    
+    .sidebar-list>div>div>li>a{
+        color: black;
+    }
+    .sidebar-list>div>div:hover{
+        /*background-color: green;*/
+        /*border-bottom: 1px solid green;*/
+        box-shadow: 3px 3px;
+        border: 1px solid black;
+    }
+    .sidebar>i{
+        font-size:32px;
+    }
+	</style>
+
+
+  
+	<title>Fluorescent Tumor Video Denoising</title>
+</head>
+
+  <body data-gr-c-s-loaded="true">
+    <div class = 'sidebar' title = "Navigator" tabindex="-1">
+        <div id='navigator'>Navigator</div>
+        <i class = "fa fa-list-ol"></i>
+        <div class = "sidebar-list">
+            <div style="color:black; list-style: none;">
+                
+                <div><li>                
+                    <a href="main.html#">Go to the top</a>
+                </li></div>                
+                <div><li>                
+                    <a href="main.html#Motivation">Motivation</a>
+                </li></div>
+                <div><li>                
+                    <a href="main.html#Approach">Approach</a>
+                </li></div>   
+                <div><li>                
+                    <a href="main.html#Result">Result</a>
+                </li></div>   
+                <div><li>                
+                    <a href="main.html#Conclusion">Conclusion</a>
+                </li></div>   
+                <div><li>                
+                    <a href="main.html#Media">Media</a>
+                </li></div>   
+                <div><li>                
+                    <a href="main.html#Reference">Reference</a>
+                </li></div>         
+            </div>
+        </div>
+    </div>
+
+    <br>
+          <center>
+          	<span style="font-size:45px">Fluorescent Tumor Video Denoising </span><br><br>
+	  		  <table align="center" width="450px">
+	  			  <tbody><tr>
+	  	              	<td align="center" width="140px">
+	  						<center>
+	  						<span style="font-size:18px"> Wei Lin</span>
+		  		  			</center>
+		  		  	  	</td>
+	  	              
+	  	              	<td align="center" width="140px">
+	  						<center>
+	  						<span style="font-size:18px"> <a href = "https://lorenzo-lu.github.io/">Yizhou Lu</a></span>
+		  		  			</center>
+		  		  	  	</td>
+			        <td align="center" width="140px">
+	  						<center>
+	  						<span style="font-size:18px"> Zhenye Li</span>
+		  		  			</center>
+		  		  	  	</td>
+
+	  		  	<td align="center" width="140px">
+		  					<center>
+		  					<span style="font-size:18px"> Renwen Cui</span>
+			  		  		</center>
+	  		  	  		</td>
+	  			  </tr>
+			  </tbody></table>
+
+			<br>
+          	
+          	        <hr>
+
+            <!--
+  		  	<table align="center" width="900px">
+				
+  			  	<tbody><tr>
+
+  		  	  		<td align="center" width="275px">
+	  					<center>
+							<span style="font-size:20px"><a href=" main.html#Motivation" style="color: #191970"> Motivation</a></span>
+	  		  			</center>
+  		  	  		</td>
+
+  		  	  		<td align="center" width="275px">
+	  					<center>
+	  						<span style="font-size:20px"><a href =" main.html#Approach" style="color: #191970">Approach</a></span>
+	  		  			</center>
+  		  	  		</td>
+
+					<td align="center" width="240px">
+						<center>
+							<span style="font-size:20px"><a href =" main.html#Result" style="color: #191970">Result</a></span>
+						</center>
+					</td>
+					
+					<td align="center" width="240px">
+						<center>
+							<span style="font-size:20px"><a href =" main.html#Reference" style="color: #191970">Reference</a></span>
+						</center>
+					</td>
+
+			  	</tr></tbody>
+			</table>-->
+      	</center>
+	  <br>
+	  
+	  <table align="center" width="600px">
+		<tbody>
+			<tr>
+				<td align="center" width="600px">
+                    <a href = "https://drive.google.com/uc?export=view&id=1eeyOHwIN25eiFMjg0lapHIsp_pDlXXbL" target = "_blank">
+                    <img class="rounded" src= "https://drive.google.com/uc?export=view&id=1eeyOHwIN25eiFMjg0lapHIsp_pDlXXbL" width="900px">
+                    </a>
+					<br>
+					<span style="font-size:16px"></span>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<br>
+	<hr>
+
+	<div id="Motivation">
+		<table align="center">
+			<td width="1000px">
+				<h1><b>Motivation</b></h1>
+			</td>
+		</table>
+
+		<table align="center">
+			<td width="1000px"><span style="font-size:18px">
+					<p>
+						In fluorescent imaging it is important that one can capture a clear video of a moving fluorescent 
+						object, such as some biological tissue. However, in the case where the fluorescent signal from an 
+						object is weak, conventional cameras could have a hard time getting enough light signal to construct 
+						an image of that object given the short amount of time allowed for exposure at each frame. Single 
+						Photon Avalanche Detectors (SPADs) are ultra-sensitive light sensors that can detect a single photon. 
+						SPAD cameras do not require long exposure time to pick up a weak light signal, so they are the ideal 
+						tool for imaging under low light conditions. However, when the intensity of the light signal coming 
+						from our object of interest is so weak that it is not much higher than the background noise picked up 
+						by the SPAD sensor, it would be difficult to identify the fluorescent object in the noisy frame. 
+						Therefore, denoising becomes a critical post processing step to improve the signal to noise ratio and 
+						obtain clean SPAD video frames. 
+					</p>
+				</span></td>
+		</table><br>
+
+		<table align="center" width="600px">
+			<tbody>
+				<tr>
+					<td align="center" width="600px">
+                        <a href = "https://drive.google.com/uc?export=view&id=17arMXD4C6Hi7wWfzwFKt4U5qTS8pCmqt" target = "_blank">
+                        <img class="rounded" src= "https://drive.google.com/uc?export=view&id=17arMXD4C6Hi7wWfzwFKt4U5qTS8pCmqt" width="700px">
+                        </a>
+						<br>
+						<span style="font-size:16px"></span>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<center>
+			<figcaption style="font-size:16px"><b>Figure 1.</b> Simulated white-light frames and florescent frames.</figcaptioncaption>
+		</center>
+		<br>
+
+		<table align="center">
+			<td width="1000px"><span style="font-size:18px">
+					<p>
+						A novel imaging system that consists of a conventional CMOS camera and a SPAD camera can help us
+						with the denoising problem. In this project, we can simulate the video of a tumor being cut by a
+						surgeon taken by a two-camera
+						imaging system described above based on the video taken by a conventional camera. Our goal is to
+						denoise biomedical fluorescent videos captured by a SPAD camera (fluorescent frames) with
+						the help of its
+						corresponding video co-captured by a conventional CMOS camera under normal luminescence
+						(white-light frames).
+					</p>
+				</span></td>
+		</table><br>
+
+	</div>
+
+	<hr>
+
+	<div id="Approach">
+		<table align="center">
+			<td width="1000px">
+				<h1><b>Approach</b></h1>
+			</td>
+		</table>
+
+		<table align="center">
+			<td width="1000px"><span style="font-size:18px">
+					<p>
+						Using the videos captured from both sensors (SPAD and CMOS), we proposed to denoise the
+						fluorescent video through two methods: multiple frames averaging with optical flow motion
+						compensation, and deep neural network based video denoising.
+					</p>
+				</span></td>
+		</table><br>
+
+
+		<table align="center">
+			<td width="1000px">
+				<h2>1. Multiple Frames Averaging with Optical Flow Motion Compensation</h2>
+			</td>
+		</table>
+
+		<table align="center">
+			<td width="1000px"><span style="font-size:18px">
+					<p>
+						The main idea here is to denoise frame n of a video using the temporal averaging method.
+						Specifically, we can warp and align frames 1 to n – 1 with frame n, sum up the n frames and take
+						the average. Based on the law of large numbers,
+						gaussian noise (mean = 0) should be removed after the averaging over a large enough number of
+						frames. We warp each frame in the video to align it with its next frame along the motion
+						trajectory. The motion trajectory is obtained
+						by calculating the optical flow between two consecutive frames using the Gunner-Farneback optical
+						flow algorithm in OpenCV.
+					</p>
+				</span></td>
+		</table><br>
+
+		<table align="center">
+			<td width="1000px"><span style="font-size:18px">
+					<p><b>Approach One contais four main steps:</b></p>
+
+					<p><b><u>1.1 Denoising a still video</u></b></p>
+					<p>
+						We tested the validity of noise removal using multi-frame averaging on a video of a still
+						object. The video has 25 frames, all frames are the same so they can be added up directly
+						without
+						alignmet. Random gaussian noise (mean = 0, sd = 100) is applied to each frame and then denoised
+						using the multi-frame averaging method. As shown in <b>Figure 2</b>, the noise is removed in the
+						final frame.
+					</p>
+
+					<table align="center" width="600px">
+						<tbody>
+							<tr>
+								<td align="center" width="600px">
+                                    <a href = "https://drive.google.com/uc?export=view&id=1lfNvY2yxrRnE8jvkSb9WZHFmkuBL2Aky" target = "_blank">
+                                    <img class="rounded" src= "https://drive.google.com/uc?export=view&id=1lfNvY2yxrRnE8jvkSb9WZHFmkuBL2Aky" width="700px">
+                                    </a>
+									<br>
+									<span style="font-size:16px"></span>
+								</td>
+								<td align="center" width="600px">
+									<a href = "https://drive.google.com/uc?export=view&id=1D876LLJZ26P7IwCt2ybrtcZBk3E2DYsn" target = "_blank">
+                                    <img class="rounded" src= "https://drive.google.com/uc?export=view&id=1D876LLJZ26P7IwCt2ybrtcZBk3E2DYsn" width="300px">
+                                    </a><br>
+									<span style="font-size:16px"></span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<center>
+						<figcaption style="font-size:16px"><b>Figure 2.</b> Multiple still frames denoising.
+							</figcaptioncaption>
+					</center>
+					<br>
+
+					<p><b><u>1.2 Denoising a video with forward optical flow motion compensation</u></b></p>
+					<p></p>
+					We move on to denoise a normal video where the objects in the video are moving. To denoise fluorescent frame
+					n of a video, the first step is to find the motion trajectory between each two consecutive fluorescent
+					frames from frame 1 to frame n by
+					calculating optical flow between each two consecutive white-light frames captured by the CMOS camera
+					because the white-light frames are
+					noise-less, and object motions are the same in white light frames and fluorescent frames.
+					</p>
+
+					<p> Next, fluorescent frames 1 to n – 1 are warped based on the motion trajectory to get aligned with fluorescent
+						frame n. The aligned fluorescent frames are then summed up and averaged to get the final denoised fluorescent
+						frame n. See <b>Figure 3</b>. The video
+						has a total of 1827 frames so n < 1827. Because object motions are determined based on video
+							being played forward, so we can call this approach denoising using the forward flow. </p>
+							<table align="center" width="600px">
+								<tbody>
+									<tr>
+										<td align="center" width="600px">
+											<a href = "https://drive.google.com/uc?export=view&id=1hygjSnxWCA6XUub7S7pBTN54w8ONYEQT" target = "_blank">
+                                            <img class="rounded" src= "https://drive.google.com/uc?export=view&id=1hygjSnxWCA6XUub7S7pBTN54w8ONYEQT" width="700px">
+                                            </a><br>
+											<span style="font-size:16px"></span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<center>
+								<figcaption style="font-size:16px"><b>Figure 3.</b> Denoising a video using forward
+									optical flow motion compensation.</figcaptioncaption>
+							</center>
+
+							<p> However, because the tweezers in the video acts like a moving occluder, optical flow
+								fails on the pixels that were not occluded in frame n – 2 but got occluded in frame n –
+								1, or pixels that were occluded in frame n – 2 but not
+								occluded anymore in frame n – 1 (i.e., a sudden change of brightness). These pixels
+								cannot be properly aligned and the averaging at these locations must be reset.
+								Therefore, these locations in the image become noisy when the
+								noisy fluorescent frame n gets added in. We propose the backward flow denoising method to
+								overcome the occlusion issue presented in optical flow.
+							</p>
+
+							<br>
+							<p><b><u>1.3 Denoising a video with backward optical flow motion compensation</u></b></p>
+							<p> Using
+								the same analogy as the forward flow, we can also denoise fluorescent frame n by aligning and
+								averaging fluorescent frame 1827 (the last frame of the video)
+								to fluorescent frame n (i.e., playing the video backwards). See <b>Figure 4</b>. Because object
+								motions are determined based on video being played backward, so we can call this
+								approach denoising using the backward flow.
+							</p>
+							<table align="center" width="600px">
+								<tbody>
+									<tr>
+										<td align="center" width="600px">
+											<a href = "https://drive.google.com/uc?export=view&id=1YSfHw27k_05fM4s0utertVKU7MJSke5g" target = "_blank">
+                                            <img class="rounded" src= "https://drive.google.com/uc?export=view&id=1YSfHw27k_05fM4s0utertVKU7MJSke5g" width="700px">
+                                            </a><br>
+											<span style="font-size:16px"></span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<center>
+								<figcaption style="font-size:16px"><b>Figure 4.</b> Denoising a video using backward
+									optical flow motion compensation.</figcaptioncaption>
+							</center>
+
+							<br>
+							<p><b><u>1.4 Denoising a video with combined forward flow and backward flow</u></b></p>
+							<p>We can
+								see that although the backward flow also failed to remove all the noise in fluorescent frame n,
+								comparing the two denoised fluorescent frame n from forward and
+								backward flow, the noise does not necessarily appear at the same locations. This is
+								because pixels of frame n whose optical flow failed in frame n -1 of the forward flow
+								does not necessarily fail in frame n + 1 of the backward flow.
+								Therefore, we can further lower the noise level in fluorescent frame n by combining the results
+								from forward flow and backward flow, as shown in <b>Figure 5</b>.
+							</p>
+
+
+							<table align="center" width="600px">
+								<tbody>
+									<tr>
+										<td align="center" width="600px">
+											<a href = "https://drive.google.com/uc?export=view&id=10jbZJh8kpB8f4Nvr_Xfq0RzaHIlHMdUK" target = "_blank">
+                                            <img class="rounded" src= "https://drive.google.com/uc?export=view&id=10jbZJh8kpB8f4Nvr_Xfq0RzaHIlHMdUK" width="700px">
+                                            </a><br>
+											<span style="font-size:16px"></span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<center>
+								<figcaption style="font-size:16px"><b>Figure 5.</b> Denoising a video using combined
+									forward flow and backward flow motion compensation.</figcaptioncaption>
+							</center>
+
+							<br>
+				</span></td>
+		</table>
+
+		<br>
+
+		<table align="center">
+			<td width="1000px"><span style="font-size:18px">
+					<h2>2. Deep Neural Network based Image Segmentation</h2>
+					<p><b><u>2.1 CNN Architecture</u></b></p>
+					<p>In this project we use the CNN architecture proposed by Chen
+						et al. <a href="#refer4"><b>[4]</b></a> for our dual-channel video denoising task. Chen
+						et al. originally used this network for depth-sensing applications. As shown in <b>Figure 6</b>
+						the network has an
+						encoder-decoder architecture with skip connections. Each block in of the neural network
+						architecture besides the first
+						and the last block represents a DenseNet module with 2L = 10 layers and k = 12 feature maps per
+						layer. The first and
+						last block represent regular 3x3 stride-2 convolutions. The network takes a concatenation of
+						white-light frames n-1, n,
+						n+1 and fluorescent frames (noisy fluorescent frame n, denoised fluorescent frame n-1) as input
+						and returns the denoised
+						fluorescent frame n.</p>
+
+
+					<table align="center" width="600px">
+						<tbody>
+							<tr>
+								<td align="center" width="600px">
+									<a href = "https://drive.google.com/uc?export=view&id=1cibsyZQD7mrWkufXbpBLoNZVil-_WDBW" target = "_blank">
+                                    <img class="rounded" src= "https://drive.google.com/uc?export=view&id=1cibsyZQD7mrWkufXbpBLoNZVil-_WDBW" width="700px">
+                                    </a><br>
+									<span style="font-size:16px"></span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<center>
+						<figcaption style="font-size:16px"><b>Figure 6.</b> Architecture of the convolution neural
+							network.</figcaptioncaption>
+					</center>
+					<p><b>There are a few reasons for choosing this architecture for our video denoising task:</b></p>
+					<ul>
+						<li>First, the encoder-decoder network architecture with skip connections is shown to be
+							effective for image denoising tasks
+							<a href="#refer1"><b>[1]</b></a> <a href="#refer2"><b>[2]</b></a> , though its effect on video denoising have not been widely explored. The
+							down-sampling layers of the encoder
+							extract features of the image while leaving out the noise. The up-sampling layers of the
+							decoder recover details of the
+							image with help of the feature maps from down-sampling layers, which are connected directly
+							to the corresponding
+							up-sampling layers through skip connections.
+						</li>
+						<br>
+						<li>
+							Second, Chen et al. have shown in their publication <a href="#refer4"><b>[4]</b></a> that the network has the
+							capability of merging two types of
+							input data (image of the scene, sparse depth map of the scene) and using it to predict a
+							higher quality version of one
+							of the inputs (high resolution depth map of the scene). This generally suits our needs for
+							combining the white-light and
+							fluorescent video frames from the input and output the denoised fluorescent video frame.
+						</li>
+					</ul>
+					<br>
+					<p><b><u>2.2 Training</u></b></p>
+					<p>The training data consists of the white-light frames and fluorescent
+						frames simulated from the first 1000 frames of the
+						entire 1827 frames in <b>mouse_video_1</b>. At frame n, the input to the network are white-light
+						frames n-1, n, n+1, noisy
+						fluorescent frame n, and denoised fluorescent frame n-1. The output is denoised fluorescent
+						frame n. The output is then
+						compared with the ground truth fluorescent frame n to calculate the loss. Standard pixel-wise L2
+						loss together with the
+						Adam optimizer is used for the training. The learning rate is set to 1e-6. The network is
+						trained for 100 epochs.
+					</p>
+
+
+					<p><b>Training without temporal information.</b>We want to see whether the neural network can learn
+						the temporal information (such as motion trajectory) between the
+						video frames from the three consecutive white-light frames n-1, n, n+1, and apply it to denoise
+						the noisy fluorescent
+						frame n. To do this we trained the neural network by just giving it three copies of white-light
+						frame n instead of
+						frames n-1, n, and n+1.
+					</p>
+					<br>
+					<p><b><u>2.3 Evaluation</u></b></p>
+					<p>The trained network is evaluated on the last 625 frames in
+						<b>mouse_video_1</b> and the first 625 frames form <b>mouse_video_2</b>.
+						The scene of fluorescent tissues in mouse_video_2 is more complicated than that in
+						mouse_video_1. Peak signal to noise
+						ratio (PSNR) is calculated on the denoised frame to assess the quality of denoising.
+						For convenience, we will refer to the last 625 frames in mouse_video_1 as <b>Vid_1</b>, and the first
+						625 frames form
+						mouse_video_2 as <b>Vid_2</b>.
+					</p>
+
+					<table align="center" width="600px">
+						<tbody>
+							<tr>
+								<td align="center" width="600px">
+									<a href = "https://drive.google.com/uc?export=view&id=1gvU7C8YpsnHFvXDZqXV-gBRXtEQ2NQgQ" target = "_blank">
+                                    <img class="rounded" src= "https://drive.google.com/uc?export=view&id=1gvU7C8YpsnHFvXDZqXV-gBRXtEQ2NQgQ" width="500px">
+                                    </a><br>
+									<span style="font-size:16px"></span>
+								</td>
+
+								<td align="center" width="600px">
+									<a href = "https://drive.google.com/uc?export=view&id=1Woj-eycGZEMr3Uc9mprHADgROd4WR5fz" target = "_blank">
+                                    <img class="rounded" src= "https://drive.google.com/uc?export=view&id=1Woj-eycGZEMr3Uc9mprHADgROd4WR5fz" width="500px">
+                                    </a><br>
+									<span style="font-size:16px"></span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<center>
+						<figcaption style="font-size:16px"><b>Figure 7.</b> <b><i>Vid_1</b></i> Last 625 frames in
+							mouse_video_1. <b><i>Vid_2</b></i> First 625 frames form mouse_video_2.
+							</figcaptioncaption>
+					</center>
+
+
+		</table>
+
+
+
+		<!-- <table align="center"><td width="1000px">
+	  	<h2>2. Deep Neural Network based Image Segmentation</h2>
+		</td></table>
+		<br> -->
+
+
+
+	</div>
+
+
+	<br>
+	<hr>
+
+	<div id="Result">
+
+		<table align="center">
+			<td width="1000px">
+				<h1><b>Results and Discussion</b></h1>
+			</td>
+		</table>
+
+		<!-- Main Result Here -->
+		<table align="center">
+			<td width="1000px">
+				<h2>1. Multiple Frames Averaging with Optical Flow Motion Compensation</h2>
+			</td>
+		</table>
+
+
+		<table align="center">
+			<td width="1000px"><span style="font-size:18px">
+					<p> In this part of the project, we explored video denoising using motion compensated multi-frame
+						averaging method on video corrupted by four different noise models: Gaussian noise with mean = 0
+						and SD = 50, 100, and 150. Poisson noise
+						with assumed maximum of 10 photons in the foreground (tumor) and 4 photons in the background.
+						The results are shown in <b>Figure 8</b>. For Poisson noise, because we assumed uniform “ground
+						truth” photons for the background (i.e. 4 photons at each pixel in the background),
+						the final denoised image is obtained by subtracting off the background from the result of
+						multi-frame averaging.
+					</p>
+
+					<p> Our combined forward and backward flow denoising method can reveal the shape of the tumor when
+						the tumor is seriously corrupted by noise in the input frames.
+					</p><br>
+
+					<table align="center" width="600px">
+						<tbody>
+							<tr>
+								<td align="center" width="600px">
+									<a href = "https://drive.google.com/uc?export=view&id=1eeyOHwIN25eiFMjg0lapHIsp_pDlXXbL" target = "_blank">
+                                    <img class="rounded" src= "https://drive.google.com/uc?export=view&id=1eeyOHwIN25eiFMjg0lapHIsp_pDlXXbL" width="500px">
+                                    </a><br>
+									<span style="font-size:16px"></span>
+								</td>
+
+								<td align="center" width="600px">
+									<a href = "https://drive.google.com/uc?export=view&id=1ccqOGditw8sZwOG3dTnqY36FtCx2dRvY" target = "_blank">
+                                    <img class="rounded" src= "https://drive.google.com/uc?export=view&id=1ccqOGditw8sZwOG3dTnqY36FtCx2dRvY" width="500px">
+                                    </a><br>
+									<span style="font-size:16px"></span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<left>
+						<figcaption style="font-size:16px"><b>Figure 8.</b> <b><i>Left.</b></i> Denoising a video with
+							Gaussian noise (mean = 0 and SD = 100). <b><i>Right.</b></i> Denoising a video with Possion
+							noise (foreground = 10 photons at peak, background = 4 photons uniformly distributed).
+							</figcaptioncaption>
+					</left>
+
+					<br>
+
+					<span style="font-size:18px"><p> From the output denoised video frames and PSNR plots shown in <b>Figure 9</b> and <b>Figure 10</b>, we observed
+						significant denoising effect using the motion compensated multi-frame averaging method on both
+						Gaussian and Poisson noise corrupted florescent videos. Also, Both the output
+						denoised video and the PSNR plots show that combining the forward flow and backward flow is
+						capable of removing some of the remaining noise from failed alignments due to optical flow
+						failures (presence of occlusion, sudden change in brightness, etc.),
+						and further improve the output video quality. The PSNR plot of the video denoised by combined
+						forward and backward flow method stays constantly above that denoised by the forward flow only
+						method.
+					</p></span>
+
+					<table align="center" width="600px">
+						<tbody>
+							<tr>
+								<td align="center" width="600px">
+									<a href = "https://drive.google.com/uc?export=view&id=1UYi6ml8GzUggF3yQVFbQMTKBvEHJP30H" target = "_blank">
+                                    <img class="rounded" src= "https://drive.google.com/uc?export=view&id=1UYi6ml8GzUggF3yQVFbQMTKBvEHJP30H" width="850px">
+                                    </a><br>
+									<span style="font-size:16px"></span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<center>
+						<figcaption style="font-size:16px"><b>Figure 9.</b> Multi-frame averaging result (Gaussian
+							noise, mean = 0, SD = 50, 100, 150).</figcaptioncaption>
+					</center>
+					<br>
+
+					<table align="center" width="600px">
+						<tbody>
+							<tr>
+								<td align="center" width="600px">
+									<a href = "https://drive.google.com/uc?export=view&id=1hfmt7HXG58hgmt_LxhNMzc-7hju6EfVz" target = "_blank">
+                                    <img class="rounded" src= "https://drive.google.com/uc?export=view&id=1hfmt7HXG58hgmt_LxhNMzc-7hju6EfVz" width="750px">
+                                    </a><br>
+									<span style="font-size:16px"></span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<center>
+						<figcaption style="font-size:16px"><b>Figure 10.</b> Multi-frame averaging result (Poisson,
+							foreground = 10 photons at peak, background = 4 photons uniformly distributed).
+							</figcaptioncaption>
+					</center>
+					<br>
+				</span></td>
+		</table>
+
+		<br>
+
+		<table align="center">
+			<td width="1000px">
+				<h2>2. Deep Neural Network based Image Segmentation</h2>
+			</td>
+		</table>
+		<table align="center">
+			<td width="1000px"><span style="font-size:18px">
+					<p><b><u>2.1 Denoising result on fluorescent frame with Gaussian noise σ=100.</u></b></p>
+					<p><b>Figure 11a</b> shows the examples of denoised fluorescent frames from Vid_1 and Vid_2
+						originally
+						corrupted with gaussian
+						noise σ=100. <b>Figure 11b and 11c</b> shows the PSNR curves of the fluorescent videos before and
+						after
+						denoising. For both Vid_1
+						and Vid_2, we can see that the network successfully removed pretty much all the noise in the
+						background and recovered
+						the overall shape of the fluorescent tissues.
+					</p>
+					<p>
+						For comparison, we also denoised Vid_1 using BM3D. BM3D is a state-of-art patch based image
+						denoising algorithm. The
+						denoised video from our neural network achieved better PSNR values compared to the denoised
+						video from BM3D (see <b>Figure
+							11b</b>).
+					</p>
+					<p>
+						The shapes of the reconstructed fluorescence tissues are mostly correct. The boundaries of the
+						reconstructed tissues
+						tend to be a bit vague, and the finer features of the tissues tend to be blurred out or lost.
+						However, given the noise
+						level of the input frame, we think that the neural network has recovered more details of the
+						tissues than what a human
+						eye can normally identify through noise.
+					</p>
+					<table align="center" width="600px">
+						<tbody>
+							<tr>
+								<td align="center" width="600px">
+									<a href = "https://drive.google.com/uc?export=view&id=15vbhGLoxY_1sxjwC2FoS4QS5epoS-5fu" target = "_blank">
+                                    <img class="rounded" src= "https://drive.google.com/uc?export=view&id=15vbhGLoxY_1sxjwC2FoS4QS5epoS-5fu" width="750px">
+                                    </a><br>
+									<span style="font-size:16px"></span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<left>
+						<figcaption style="font-size:16px"><b>Figure 11.</b> Evaluation of the CNN on two different
+							florescent videos (Vid_1 ad Vid_2). (a) Sample input noisy frames and output
+							denoised frames of Vid_1 and Vid_2. (b) PSNR plot of Vid_1 before and after denoising using
+							both CNN and BM3D algorithm.
+							(c) PSNR plot of Vid_2 before and after denoising with CNN.
+							</figcaptioncaption>
+					</left>
+
+                                        <br>
+
+                                        <span style="font-size:18px">
+					<p><b><u>2.2 Comparison of denoising results on fluorescent frames with Gaussian noise σ=50, 100,
+								150</u></b></p>
+					<p>
+						We also evaluated the denoising effect of our CNN on both Vid_1 and Vid_2 corrupted by three
+						levels of gaussian noise
+						(σ=50, 100, 150). <b>Figure 12a</b> shows the results for denoising Vid_2 at three levels of
+						Gaussian noise, <b>Figure 12b</b> shows the
+						results for denoising Vid_1 with three levels of Gaussian noise.
+					</p>
+					<table align="center" width="600px">
+						<tbody>
+							<tr>
+								<td align="center" width="600px">
+									<a href = "https://drive.google.com/uc?export=view&id=1F0Jpflw-RwnSgP1glsO43Hlkveo1gRS2" target = "_blank">
+                                    <img class="rounded" src= "https://drive.google.com/uc?export=view&id=1F0Jpflw-RwnSgP1glsO43Hlkveo1gRS2" width="500px">
+                                    </a><br>
+									<span style="font-size:16px"></span>
+								</td>
+
+								<td align="center" width="600px">
+									<a href = "https://drive.google.com/uc?export=view&id=1JyDuDnXmOIFDt114Z898elj3-yNNQnD6" target = "_blank">
+                                    <img class="rounded" src= "https://drive.google.com/uc?export=view&id=1JyDuDnXmOIFDt114Z898elj3-yNNQnD6" width="500px">
+                                    </a><br>
+									<span style="font-size:16px"></span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<center>
+						<figcaption style="font-size:16px"><b>Figure 12.</b> Denoising result of the CNN on (a) Vid_1
+							and (b) Vid_2 corrupted by three levels of Gaussian noise (σ = 50, 100, 150)
+							</figcaptioncaption>
+					</center>
+					<br>
+					<p>
+						We can see that at all three noise levels, the network is able to remove pretty much all the
+						noise in the background and
+						reconstruct much of the tumor’s original shape. The accuracy of the tissue’s shape
+						reconstruction decreases as the noise
+						level of the input video frames get higher and image of the fluorescent tissues inside the
+						frames get more blurred out
+						by noise. The boundary of the reconstructed tissue becomes more blurred out and more fine
+						features are lost. This
+						phenomenon is more pronounced in <b>Figure 12a</b> as the tissue in mouse_video_2 has more
+						complex edges and more fine features.
+					</p>
+						
+					<br>
+						
+					<p><b><u>2.3 Denoising effect of CNN trained without temporal information</u></b></p>
+					<p>
+						In this part we trained the neural network without showing it the temporal information between
+						video frames by giving it
+						three copies of the same white-light frame n instead of consecutive frames n-1, n, and n+1 at
+						the input. The result is
+						shown in <b>Figure 13</b>. We can see both from the sample output of the denoised frame shown in
+						<b>Figure 13a</b> and the PSNR plot
+						shown in <b>Figure 13b</b> that the outcome of training the neural network with and without the
+						temporal information is very
+						similar. In other words, the neural network most likely could not infer the temporal information
+						from the white light
+						frames and apply it to denoise the fluorescent frame.
+					</p>
+					<table align="center" width="600px">
+						<tbody>
+							<tr>
+								<td align="center" width="600px">
+									<a href = "https://drive.google.com/uc?export=view&id=1qI58uDmFuMwVWLBaQm2bil8MEdnd5EYA" target = "_blank">
+                                    <img class="rounded" src= "https://drive.google.com/uc?export=view&id=1qI58uDmFuMwVWLBaQm2bil8MEdnd5EYA" width="750px">
+                                    </a><br>
+									<span style="font-size:16px"></span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<left>
+						<figcaption style="font-size:16px"><b>Figure 13.</b> Evaluation of CNN trained without providing
+							temporal information of the video (a) comparison of the sample output frames
+							from CNN trained with and without temporal information. (b) Comparison of the PSNR curves
+							for a florescent video
+							denoised using CNN trained with temporal information provided and CNN trained without
+							temporal information provided
+							</figcaptioncaption>
+					</left>
+                                        </span>
+
+
+		</table>
+
+		<br>
+
+
+
+
+
+
+
+
+	</div>
+	<br>
+	<hr>
+	<div id="Conclusion">
+		<table align="center">
+			<td width="1000px">
+				<h1><b>Conclusion and future directions</b></h1>
+			</td>
+		</table>
+		<table align="center">
+			<td width="1000px"><span style="font-size:18px">
+					<p><b>For motion compensated multi-frame averaging method:</b></p>
+					<p>We have demonstrated that much of the noise can be removed through temporal averaging across
+						multiple video frames. For
+						future work, the remaining noise can be further reduced frame by frame using off-the-shelf
+						spatial denoising methods for
+						single image.
+					</p>
+					<p><b>For CNN based video denoising method:</b></p>
+					<p>One problem to solve in the future is how to improve on top of this neural network or produce a
+						new network such that it
+						can exploit temporal information from the white-light frames and apply it to denoise the
+						florescent frames. Replacing
+						the current DenseNet modules with modified U-Net modules like the ones in FastDVDNet would be
+						something interesting to
+						try as the modified U-Net can learn the misalignments between two video frames <a href="#refer3"><b>[3]</b></a>.
+					</p>
+		</table>
+
+
+
+	</div>
+
+	<br>
+	<hr>
+
+    <div id="Media">
+
+		<table align="center">
+			<td width="1000px">
+				<h1><b>Media</b></h1>
+			</td>
+        </table>
+
+        <table align="center">
+                <td width="1000px">
+                    <tbody>
+                        <tr>
+                            <td align="center" width="70%">
+                
+                        <iframe id="preview_frame" src="https://drive.google.com/uc?export=view&id=1HlNaMx8KLQWniSqZpa5weHPlu_leq9OM" allowfullscreen="true" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *; autoplay *" frameborder="0" style="border: 0px solid green; width: 70vw; height: 70vh; display: block; margin:5%" title="SlidesPreview" align="center"></iframe>
+
+                        <iframe id="preview_frame" src="https://drive.google.com/uc?export=view&id=1MmCz9dnhFnPekj_DRQBt3M4j01jVUIFb" allowfullscreen="true" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *; autoplay *" frameborder="0" style="border: 0px solid green; width: 70vw; height: 70vh; display: block; margin:5%" title="Video" align="center"></iframe>
+                    </td>
+                </tr>
+            </tbody>
+                </td>
+                </table>
+
+		
+    </div>
+
+    <br>
+	<hr>
+
+	<div id="Reference">
+
+		<table align="center">
+			<td width="1000px">
+				<h1><b>Reference</b></h1>
+			</td>
+
+		</table>
+		<table align="center">
+			<td width="1000px"><span style="font-size:18px">
+					<left>
+						<figcaption style="font-size:16px"><b id="refer1">[1]</b></a> S. Guo, Z. Yan, K. Zhang, W. Zuo and L. Zhang,
+							"Toward Convolutional Blind Denoising of Real Photographs," 2019 IEEE/CVF
+							Conference on Computer Vision and Pattern Recognition (CVPR), 2019, pp. 1712-1722
+							</figcaptioncaption>
+					</left>
+					<br>
+					<left>
+						<figcaption style="font-size:16px"><b id="refer2">[2]</b> Mao, Xiaojiao and Shen, Chunhua and Yang, Yu-Bin,
+							“Image Restoration Using Very Deep Convolutional Encoder-Decoder
+							Networks with Symmetric Skip Connections”, Advances in Neural Information Processing
+							Systems, 29, 2016
+
+							</figcaptioncaption>
+					</left>
+					<br>
+					<left>
+						<figcaption style="font-size:16px"><b id="refer3">[3]</b> Tassano, Matias and Delon, Julie and Veit, Thomas,
+							“FastDVDnet: Towards Real-Time Deep Video Denoising Without Flow
+							Estimation”, Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
+							Recognition (CVPR), 2020
+
+							</figcaptioncaption>
+					</left>
+					<br>
+					<left>
+						<figcaption style="font-size:16px"><b id="refer4">[4]</b> Chen, Zhao and Badrinarayanan, Vijay and Drozdov,
+							Gilad and Rabinovich, Andrew. Estimating Depth from RGB and Sparse
+							Sensing. 15th European Conference, Munich, Germany, September 8-14, 2018, Proceedings, Part
+							IV
+							</figcaptioncaption>
+					</left>
+
+		</table>
+
+
+
+
+	</div>
+
+	<!-- <!-- Q&A part -->
+	<!-- <left><h2>Q&A</h2></left> -->
+	<!-- 		<center><h2>Q&A</h2></center>
+		<table align="center" width="1100px">
+		 	<tbody>
+  		  		<tr>
+	              <td align="left" width="600px">
+					<span style="font-size:20px">1. How does it compare to xxxxxx</span><br>
+					<span style="font-size:20px"><i>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</i></span>
+				  </td>
+				</tr>
+
+				<tr>
+	              <td align="left" width="600px">
+					<span style="font-size:20px">2. How does it compare to xxxxxx</span><br>
+					<span style="font-size:20px"><i>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</i></span>
+				  </td>
+				</tr>
+  			</tbody>
+		</table>
+
+		<br>
+		<hr>  -->
+
+
+	<!-- related part-->
+	<!--   		<table align="center" width="1100px">
+		  <tbody><tr>
+	              <td width="400px">
+					<left>
+			  <center><h2>Related Work</h2></center>
+			  		<span style="font-size:20px"><left><b> Phasor Field Non-Line-of-Sight Imaging:</b> </left></span><br>
+
+				xxxxx <b>xxxxx</b> In xxxx, xxxx. <a href="">[PDF]</a><a href=""> [Website]</a><a href=""> [Demo]</a><br>
+
+			  		<span style="font-size:20px"><left><b> Femto-Photography:</b> </left></span><br>
+
+				xxxxx. <b>xxxxxxxxx.</b> In xxxx, xxxx. <a href=""> [PDF]</a><a href=""> [Website]</a><a href=""> [Demo]</a><br>
+
+				</left>
+				</td>
+		 		</tr>
+			</tbody>
+		</table> 
+		<hr> -->
+
+
+
+
+
+	<!-- Cite back to author  -->
+
+<br>
+
+<div style="text-align:center; font-size:10px">
+
+                    © 2021 Lorenzo Lu. Powered by
+					by <a href="http://web.mit.edu/phillipi/">Phillip Isola</a> and <a href="http://richzhang.github.io/">Richard Zhang</a> for a <a href="http://richzhang.github.io/colorization/">colorful</a> ECCV project template.
+				
+</div>
+</body>
+</html>

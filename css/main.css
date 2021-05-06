@@ -3,36 +3,36 @@ html{
     margin: 0 0%;
     border: 0px;
     height: 100%;
-    background-image: url("/Photo/WallPaper5.jpg");
-    //background-image: url("/Logos/compass.png");
+    background-image: url("/Photo/WallPaper.jpg");
+    /*background-image: url("/Logos/compass.png");*/
     background-size: 40%;
     /*background-repeat: no-repeat;*/
     background-attachment:fixed;
 
-    font-family:  'tahoma', 'Comic Sans MS', 'Tahoma', 'verdana', 'Arial','helvetica', 'Times', 'Palatino','courier','georgia';
+    font-family:  'Tahoma', 'Comic Sans MS', 'Tahoma', 'verdana', 'Arial','helvetica', 'Times', 'Palatino','courier','georgia';
     font-size: 14px;
 }
 
 body {
     border: 0;
     /*margin: 0px 20% 0px;*/
-    display: block;
+    /*display: block;*/
     width: 60%;
-
-    /*margin: 0px  auto;*/
-    
+    /*margin: 0px  auto;*/    
     padding: 0;
     /*float: left;
     /overflow: visible;*/
-    //background: inherit;
+    /*background: inherit;*/
 
     margin-left: auto;
 	margin-right: auto;
     margin-top : 0;
     opacity: 1;
 
-    background-color: #d5d5d5;
-    min-height: 100%; /*视野中不中断*/
+    /*background-color: #d5d5d5;*/
+    background-color: white;
+    /*height: 100%;*/ /*视野中不中断*/
+    
 }
 @media screen and (max-device-width: 480px)
 { body
@@ -52,7 +52,7 @@ body {
     position: relative;
     overflow: hidden;
     */
-    border: 5px solid gray;
+    border: 5px solid gold;
     border-radius: 50%;
 }
 
@@ -133,7 +133,7 @@ footer {
     left: 20%;     
     right: 20%;
     background-color: #d5d5d5;
-    */    
+    */ 
 }
 
 h4 {
@@ -166,7 +166,7 @@ li{
 .whiteboard{
     padding: 2% 3% ; 
     margin: 0% 0%;
-    
+    /*box-shadow:  3px 3px 3px black;*/
     background-color:  white;
 }
 
@@ -177,7 +177,7 @@ li{
     right: 75%;
     word-wrap: break-word;
     color: white;
-    display:none;
+    display:true;
     /*background-color: white;*/
 }
 .sidebar-list {
