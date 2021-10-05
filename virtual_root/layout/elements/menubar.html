@@ -1,0 +1,167 @@
+  <style>        
+    .menubar{
+    left:0px;
+    top:0vw;
+    bottom:0vw;
+    width:25vw;
+    min-height: 100vh; 
+    background-color:black;
+    color: gray;
+    font-weight: bold;
+    font-size:2.5vh;
+    position:fixed;
+    z-index: 9999;    
+    //text-align: center;
+    font-family: 'Red Hat Text', 'Chakra Petch';
+    }
+    .portrait {
+      padding: 0 20%;
+      text-align:center;
+      
+    }
+    .portrait img{
+      /*max-width:60%;*/
+      max-width:60%;      
+      max-height: 20vh; 
+      margin: 5% 10%;
+      margin-top:25%;
+      border-radius: 50%;
+      border: 0.2vw solid;
+    }
+    
+    .container{        
+      position:fixed;
+      top:0vh;
+      bottom: 10vh;
+      width: inherit;
+      background-color:inherit;      
+      overflow: auto;
+    }  
+
+    .container>ul{ 
+      border-top: 0.0vw solid;
+      list-style: none;
+      padding: 0vw;
+      font-size: 0.8em;; 
+      padding: 0vw 20%;
+    }
+
+    /*
+    .container>ul>li{ 
+      padding: 0.15vw 0vw;   
+    }
+    */
+    
+    .container>ul>li:hover,.container>ul>li:focus{
+      //text-decoration: underline; 
+      color:white;
+    }
+    .menubar a{
+      text-decoration:none; 
+      color:inherit;
+      cursor: pointer;
+    }  
+    .menubar a:focus, .menubar a:active, .menubar a:hover{
+      outline: none; /*avoid markdown effects*/
+      text-decoration:none;
+    }  
+    .current{/*show current page by JavaScript*/
+      color:silver;
+    }
+    .current:before{
+      content:"\f205  ";
+      font-family: 'FontAwesome';
+    }
+    .noncurrent{
+    }
+    .noncurrent:before{
+      content:"\f204  ";
+      font-family: 'FontAwesome';
+    }    
+
+    .footer{
+      width:inherit;
+      bottom: 0vh;
+      padding-bottom: 1vh;
+      text-align:center;
+      position:fixed;
+      font-size:0.8em;
+      border-top: 0.1vh solid;
+    }
+    .footer > span{
+      margin: 0% 1%;
+    }
+    .footer > span:hover{
+      color:white;
+    }
+    .footer a, .footer > span:hover a{
+      text-decoration:none;
+    }
+    .footer> .copyright{
+      //text-align:right;
+      font-size: 0.7em;
+    }
+    
+  </style>
+
+
+
+<div class='menubar' > 
+  
+  <div class = 'container'>
+    <div class='portrait'>
+      <img src = '/virtual_root/layout/self.png'></img>
+
+      <p>
+      Hi, I am Lorenzo!
+      </p>
+    </div>
+  <ul>
+    <li><a iframe_url = '/virtual_root/sections/Home/Home.html' onclick='refresh_iframe(this)'>Home</a></li>
+    <li><a iframe_url = '/virtual_root/sections/About/About.html' onclick='refresh_iframe(this)'>About</a></li>
+    <li><a iframe_url = '/virtual_root/sections/CV/CV.html' onclick='refresh_iframe(this)'>CV</a></li>
+    <li><a iframe_url = '/virtual_root/sections/News/' onclick='refresh_iframe(this)'>News</a></li>
+    <li><a iframe_url = '/virtual_root/sections/Blogs/Blogs.html' onclick='refresh_iframe(this)'>Blogs</a></li>
+    <li><a iframe_url = '/virtual_root/sections/Publications/Publications.html' onclick='refresh_iframe(this)'>Publications</a></li>
+    <li><a iframe_url = '/virtual_root/sections/Projects/Projects.html' onclick='refresh_iframe(this)'>Projects</a></li>
+    <li><a iframe_url = '/virtual_root/Misc/' onclick='refresh_iframe(this)'>Misc</a></li>
+  </ul> 
+  </div class='container'>
+
+  <div class='footer'>
+    <span>
+      <a href="mailto:ylu289@wisc.edu" target="blank">
+        <i class = "fa fa-envelope"></i>
+      </a>
+    </span>
+
+    <span>
+      <a href="https://github.com/Lorenzo-lu" target="blank">
+        <i class = "fa fa-github"></i>
+      </a>
+    </span>
+
+    <span>
+      <a href="https://www.linkedin.com/in/yizhou-lu-830233124/" target="blank">
+        <i class = "fa fa-linkedin-square"></i>
+      </a>
+    </span>
+
+    <span>
+      <a href="https://www.facebook.com/profile.php?id=100012885367579" target="blank">
+        <i class = "fa fa-facebook-square"></i>
+      </a>
+    </span>
+
+    <span>
+      <a href="https://www.researchgate.net/profile/Yizhou_Lu3" target="blank">
+        <i class = "fa fa-flask"></i>
+      </a>
+    </span>
+
+    <div class = 'copyright'>
+    ©2021 Lorenzo Lu
+    </div>
+  </div class='footer'>
+</div>
+

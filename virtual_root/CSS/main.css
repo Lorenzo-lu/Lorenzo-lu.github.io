@@ -1,0 +1,81 @@
+html{
+    background-color: white;
+}
+
+body {
+    opacity: 1;        
+    min-height: 100%; /*视野中不中断*/   
+    /*font-size:1.12vw;
+    text-align:justify;
+    background-size: 100%;
+    background-attachment:fixed;*/
+    font-family: 'KaTeX_Main','Red Hat Text', 'Chakra Petch','times','roboto';
+    font-size: 1.5vw;;
+    padding: 2% 5%;      
+}
+
+
+
+
+.yz_container_md{ /*only for styled markdown*/
+  padding: 0% 15%;  
+  font-family: inherit,'Kurale','Lato','helvetica','Chakra Petch','times','roboto','DotGothic16';
+}
+.katex .mathnormal{
+  font-style: italic; // 数学字体斜体 
+}
+.katex-display, .katex-inline{
+  overflow-x: auto;
+}
+
+pre{
+  overflow-x: auto;
+}
+code{
+    font-size: 0.9em;
+    font-family: 'KaTeX_Typewriter','courier prime','VT323',"pt mono",monospace;
+    color:RoyalBlue;    
+    /*line-height:100%;
+    border: 0.1vw solid gray;
+    padding: 0px 0.3vw;
+    color: blue;
+    background-color:lightgray;
+    */
+}
+
+
+
+h1, h2, h3, h4{
+  /*color:black;*/
+  /*font-family: 'KaTeX_Main','Red Hat Text','Jockey One', sans-serif;*/
+  font-weight: bold;
+  border: none;
+}
+
+ h1{
+  font-size: 2em;
+  border-bottom: 0.1vw solid;
+}
+
+comment{
+  color:gray;
+}
+
+
+
+/*
+.yz_container h1:before,.yz_container h2:before,.yz_container h3:before,.content h4:before{
+  content:'';
+  display:block;
+  border-top: 0.1vw solid black;
+}*/
+
+
+hr{
+  border-width: 0vw;
+  height: 0.1vw;
+  background-color:black;
+}
+
+.clear{clear:both;}
+

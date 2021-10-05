@@ -1,0 +1,74 @@
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link href="/virtual_root/CSS/main.css" rel="stylesheet" type="text/css" />
+<script src="/virtual_root/JavaScript/highlight_navbar.js"></script>
+
+  <style>
+        
+    .menubar{
+    left:0px;
+    width:100vw;
+    max-height: 3.0vw;
+    padding: 0.3vw 0vw;    
+    background-color:black;
+    color: white;
+    font-size:1.1vw;
+    position:fixed;
+    z-index: 9999;
+    }
+    
+    .yz_sidebar{
+        padding:0vw 1vw;  
+        color: white;
+        background-color:inherit;
+        border-bottom:0.1vw white solid;
+        font-size: 0px; /*可以消除inline tag的间距*/        
+    }
+  
+
+    .yz_sidebar>span{         
+      border:0.1vw transparent solid;
+      /*border-right:1px white solid;*/
+      font-size:1.1vw;    
+      transition: all 1.0s; 
+    }
+    .yz_sidebar>span:hover,.yz_sidebar>span:focus{
+      color: yellowgreen;   
+      /*border:0.1vw white solid;
+      border-bottom: 0.1vw black solid;*/
+    }
+    .yz_sidebar>span>a{
+      text-decoration:none;  
+      padding: 0px 0.5vw;    
+    }
+
+    span.current{/*show current page by JavaScript*/
+      border:0.1vw white solid;
+      border-bottom: 0.1vw black solid; 
+    }
+  </style>
+
+
+
+<div class='menubar' id = 'menubar'> 
+            
+        <div class='yz_sidebar'>            
+            <span><a href = "/virtual_root/" style='font-weight:bold'> <i class = "fa fa-home"></i> Fluorescence Exploration Lab </a></span>
+            <span><a href = "/virtual_root/contents/About/About.html">About Fluorescence</a></span>
+            <span><a href = "/virtual_root/contents/Applications/Applications.html">Applications</a></span>
+            <span><a href = "/virtual_root/contents/Experiments/Experiments.html">Experiments</a></span>  
+            <span><a href = "/virtual_root/contents/Recipes/Recipes.html">Fluorescence Recipes</a></span>
+            <span><a href = "/virtual_root/contents/Gallery/Gallery.html">Gallery</a></span>
+            <span><a href = "/virtual_root/contents/Sources/Sources.html">Sources</a></span>
+        </div>
+      
+    
+    
+</div>
+
+
+<!--
+    <div class='clear'></div>-->
+<div id = 'offset'style='height:3.0vw;background-color:transparent;'></div>
+<!--avoid covering content-->

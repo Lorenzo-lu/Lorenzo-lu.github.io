@@ -1,0 +1,27 @@
+
+.figure{
+  width:95%;
+  margin: 0 1%;
+}
+.figure > img{
+  width:100%;
+  float:inherit;
+}
+
+.text_fig > .figure{
+  /*width: 48%;*/  
+  margin: 0 1%;
+  float:left;
+  text-align-last: center;
+}
+.figure > .caption{
+  font-size:0.7em;
+  font-family: monospace;
+  padding:0 5%;
+  text-align: center;
+}
+
+.text_fig > .text{
+  width: 50%;
+  float: left;
+}
