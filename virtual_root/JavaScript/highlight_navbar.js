@@ -9,14 +9,17 @@ function highlight_navbar(){
       var lb, lia;
       var ul_height =window.innerHeight / 3;// get element height
           
-      var li_height = parseFloat(window.getComputedStyle(links[0], null).getPropertyValue('height'));   
-      
+//      var li_height = parseFloat(window.getComputedStyle(links[0], null).getPropertyValue('height'));   
+//      
+//      var padding = (ul_height / links.length - li_height)/2;
+//      padding = padding / window.innerHeight * 100;
+      var li_height = window.innerHeight / 100 * 2.5;
       var padding = (ul_height / links.length - li_height)/2;
-      padding = padding / window.innerHeight * 100;
+      padding = padding / ul_height * 100;
       
       var i=0;     
       for(i;i<links.length;i++){
-        links[i].style.padding = `${padding}vh 0px`;
+        links[i].style.padding = `${padding}% 0px`;
         links[i].className = "noncurrent";
         try{
           lia = links[i].getElementsByTagName("a")[0];
