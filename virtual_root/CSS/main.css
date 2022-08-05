@@ -22,7 +22,7 @@ body {
   font-family: inherit,'Kurale','Lato','helvetica','Chakra Petch','times','roboto','DotGothic16';
 }
 .katex .mathnormal{
-  font-style: italic; // 数学字体斜体 
+  font-style: italic; /* 数学字体斜体*/ 
 }
 .katex-display, .katex-inline{
   overflow-x: auto;
@@ -33,8 +33,8 @@ pre{
 }
 code{
     font-size: 0.9em;
-    font-family: 'KaTeX_Typewriter','courier prime','VT323',"pt mono",monospace;
-    color:RoyalBlue;    
+    font-family: 'Share Tech Mono', 'KaTeX_Typewriter','courier prime','VT323',"pt mono",monospace;
+    color:blue;    
     /*line-height:100%;
     border: 0.1vw solid gray;
     padding: 0px 0.3vw;
