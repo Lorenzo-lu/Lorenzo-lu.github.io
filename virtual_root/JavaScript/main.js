@@ -62,3 +62,8 @@ function main(){
     }
   }, 100);
 }
+
+function fullPath(relativePath){
+	var root = '/';
+	return root + relativePath;
+}

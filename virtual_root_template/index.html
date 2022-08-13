@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  
+  <link rel="icon" href="/virtual_root/layout/favicon/terminal.jpeg"/> 
+  
+  <script src="/virtual_root/JavaScript/main.js"></script>
+  <script src="/virtual_root/JavaScript/highlight_navbar.js"></script>
+  <!--
+  <script src="/virtual_root/JavaScript/includeHTML.js"></script>
+  
+  <script src="/virtual_root/JavaScript/bgm.js"></script>
+  -->
+  <div include-html = "/virtual_root/layout/elements/head.html"></div>
+  <div include-html="/virtual_root/layout/elements/fonts.html"></div>
+  <div include-html = "/virtual_root/layout/elements/menubar.html"></div>
+
+  <style>
+    .yz_container{
+    /*margin:0px 20%;      */
+    color:black;
+    //height:98vh;
+    overflow-y:hidden;;
+    position:fixed;
+    top:0vh;
+    bottom: 0vh;
+    left:25vw;
+    right:0vw;
+    }   
+    .yz_container>iframe{
+      font-family: inherit; 
+      //padding: 2% 10%;
+      width: 100%;
+      height:96vh;
+    }
+  </style>
+      
+    <body>
+    <div class='yz_container'>      
+      <!--
+      <div include-html = "/virtual_root/test/ONN_markdown.html" ></div>  
+      -->
+
+      <iframe id='subweb'src='/virtual_root/sections/Home/Home.html' title="Home"frameborder="0"></iframe>       
+      
+        
+      <div style=" text-align:center; font-size:2vh; position:fixed; left:25vw;right:0vw;bottom:0vh;top:97vh; border-top:0.1vw solid black;background-color:transparent;color:dimgray" >
+          <i class = "fa fa-print" onclick='print_iframe()' style="cursor:pointer;"></i>
+      </div>
+    
+    </div class="yz_container">
+    
+
+   
+    
+  </body>
+
+
+
+
+
+<script>
+  main();
+  highlight_navbar();
+  function print_iframe(){
+    document.getElementById("subweb").contentWindow.print();
+  }
+</script>
+
+</html>

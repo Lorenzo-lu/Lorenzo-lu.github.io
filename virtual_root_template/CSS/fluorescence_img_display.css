@@ -1,0 +1,43 @@
+.fluorescence_img{
+  margin: 0px 20%;
+  background-color:black;  
+  display: block;
+  overflow: hidden;
+
+}
+.fluorescence_img img{
+  left:0;
+}
+.fluorescence_img >*{
+  margin:0px 0%;
+}
+.fluorescence_img > .normal{
+  opacity:1;
+  transition: opacity 2s ease-in-out;
+}
+.fluorescence_img:hover > .normal
+/*,.fluorescence_img:focus > .normal*/
+{
+    opacity:0;
+    transition: opacity 2s ease-in-out;
+}
+/*
+.fluorescence_img > .UV{
+    display: inline;
+}
+
+.fluorescence_img:hover > .UV
+/*,.fluorescence_img:focus > .UV
+{
+    display: inline;    
+}*/
+
+
+.fig_caption{
+  background-color: inherit;
+  color: white;
+  font-size:0.75em;
+  padding: auto;
+  text-align: center;
+  font-family:monospace;
+}

@@ -1,0 +1,59 @@
+button.collapsible {
+  /*background-color:whitesmoke;*/
+  cursor: pointer;
+  padding: 1%;
+  width: 100%;
+  border:none;
+  text-align: left;
+  outline: none;
+  font-size: 1.25em;
+  font-family:inherit;
+  border-bottom: 0.1vw solid;
+}
+
+
+button.collapsible::before{
+  content: "\f114";
+  font-family: 'FontAwesome';
+  display: inline-block;
+  width: 3%;
+}
+
+
+button.collapsible.active, .collapsible:hover {
+  background-color: #555;
+  color:white;
+}
+
+button.collapsible.active::before{
+  content: "\f115";
+  font-family: 'FontAwesome';
+  display: inline-block;
+  width: 3%;
+}
+
+.collapsible_content {  
+  margin-left: 5% ;
+  display: none;
+  overflow: hidden;
+}
+
+
+.collapsible_content > button.collapsible {
+  font-size: inherit;
+  background-color: white;
+  //padding: 0% 0%;
+  border: none;
+  color: blue;
+}
+.collapsible_content > button.collapsible.active,  .collapsible_content > button.collapsible:hover{
+  /*background-color: black;*/
+  color:black;
+}
+
+.collapsible_content >button.collapsible::before{
+  content: "\f101";
+}
+.collapsible_content > button.collapsible.active::before{
+  content: "\f103";
+}
