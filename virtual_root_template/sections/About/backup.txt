@@ -1,0 +1,48 @@
+<h1>About Me</h1>		
+      <comment>
+        Yizhou Lu (Lorenzo) 
+        <br>
+        Madison, WI, US 
+        <br>
+        Teaching Assistant at Department of Computer Sciences, 
+        <br>
+        Research Assistant at Department of Biostatistics and Medical Informatics,
+        <br>
+        at the University of Wisconsin-Madison
+      </comment> 
+
+      <p>
+      Thank you for visiting.
+      </p>
+      <p>
+        I am a graduate student pursuing a Ph.D. in Electrical and Computer Engineering at the University of Wisconsin-Madison, studying the fluorescence lifetime imaging microscopy (FLIM) for diagnoisis and live-capture of cancer, the dark-field single-photon imaging and video motion compensation. 
+      </p>
+
+      <p>
+        Between 2013 and 2017, I studied Geochemistry at Nanjing University, China. My thesis project involved promoting the Atomic Pair Distribution Function method onto lab X-ray diffraction devices. In Dec 2019, I was conferred with a Master's degree at UW-Madison where I changed my major into Materials Science and Engineering. After that semester, I started my new adventure in Electrical and Computer Engineering. 
+        <!--
+        <comment>
+          This track can be described indirectly by the names I saw most frequently: Bravis >> Bragg >> Fourier >> 
+        </comment>
+        -->
+        
+        My experiences in different majors contributed not only to my knowledge but also to my philosophy, which affects my understanding towards the world and my methodologies to solve the problems.
+      </p>
+
+      <p>
+        As a greedy explorer, I am never satisfied with the correct results. In my philosophy, a good design involves both correct results and efficient strategies. In most of my work, I am always trying to find a universal strategy/method/solution to many scenarios including those not there but may appear in the future. <!--
+          The efficient process involves independence between steps and avoiding unnecessary concepts. I describe my coding style in researches as cooking, where an object is food on a plate which should be put back on the same plate after cooking (or a method/function) changes its status. Using passing by reference, the methods/functions can share similar forms without too many changes, since we want to compare the food statues after different ways of cooking. Thus, most of my research codes have clean appearances and are easy to understand. I am also a sharp problem-finder. When using Google-Colab, I avoid searching the file I want to access in the coding interface (especially when the targets are in very deep folders) by generating <code>.path.log</code> file containing the current folder's path in advance. 
+          (mention latex, python, matlab, js)
+        --> I am also a committed engineer insisting that human should always leave repeating work to machines and computers as much as possible. This opinion is also shown in this website, where the modularized and distributed sections are embeded into <code>yz_containers</code>.
+      </p>
+      <p>
+        Despite being aided by a a lot of small homemade tools like short codes, I am not super engineering in leisure time. In this case, the purpose of my coding is "making my life beautiful". One of my favorite stuff is photography. My photos are not featured by exquisite expression, but the capture of the transitory. Therefore, my most common camera is my mobile. When necessary, I code to improve the pictures taken under extreme conditions (e.g. perseid meteor shower, Neowise Comet) or with poor quality (backlight/blurred). This hobby is what my research interest can be tracked back to.   
+      </p>
+      <p>
+        Drawing used to be favorite hobby. At the very begining when I was in my primary school, I practiced traditional Chinese Painting and Caligraphy. After middle high school, I had a brief excursion in oil painting. But in all, sketching is my most common one. Different from photography, drawing depicts imaginations and illusions. My ideas of designing can be taken in front of others by drawing. One thing similar to it is constructing buildings in MineCraft. I used to spend plentiful time re-building the landmarks. I only build in the regular mode where I have to collect resources and fight with monsters. The re-built landmarks include the Bascom Hall of UW-Madison, North Hall of Nanjing University, and so on. After becoming an engineer student, I found it is as time-consuming as drawing, since only one thread is used in that process. Another shortcomming for drawing lies in the data imgration. With my philosophy changed, I turned to front-end programming to express my appreciation of the beauty. In this year, I modified the style of Jupyter Notebooks (<a href="https://github.com/Lorenzo-lu/Jupyter_Themes_Special">LINK</a>), and also embeded different language kernels like Mathematica and Matlab.
+
+        (BTW: Usually, I am not an addicted gamer while I may play much sometimes. In my opinion, games nowadays are too difficult and too time-consuming to play.)
+      </p>
+      <p>
+        More details about me are coming soon!        
+      </p>
