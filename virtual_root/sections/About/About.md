@@ -5,8 +5,6 @@
         <br>
         Madison, WI, US 
         <br>
-        Teaching Assistant at Department of Computer Sciences, 
-        <br>
         Research Assistant at Department of Biostatistics and Medical Informatics,
         <br>
         at the University of Wisconsin-Madison
