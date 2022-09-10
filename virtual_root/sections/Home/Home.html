@@ -1,46 +1,60 @@
 <!DOCTYPE html>
 <html>
-  
-  <link rel="icon" href="/virtual_root/layout/favicon/terminal.jpeg"/> 
-  
-  <script src="/virtual_root/JavaScript/main.js"></script>
-	
-  <!--
+
+<link rel="icon" href="/virtual_root/layout/favicon/terminal.jpeg" />
+
+<script src="/virtual_root/JavaScript/main.js"></script>
+
+<!--
   <script src="/virtual_root/JavaScript/includeHTML.js"></script>
   <script src="/virtual_root/JavaScript/highlight_navbar.js"></script>
   <script src="/virtual_root/JavaScript/bgm.js"></script>
   -->
-<div include-html = "/virtual_root/layout/yz_layout.html"></div> 
-    
-      
-    <body>
-      <!--
+<div include-html="/virtual_root/layout/yz_layout.html"></div>
+
+
+<body>
+	<!--
       <div include-html = "/virtual_root/test/ONN_markdown.html" ></div>  
       -->
-<!--       <div include-html = '/virtual_root/PyTorch variance gradient.html'></div>
+	<!--       <div include-html = '/virtual_root/PyTorch variance gradient.html'></div>
        -->
-<!-- 		<div include-markdown='/virtual_root/sections/Home/Home.md'></div> -->
-		
-<!-- 		<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+	<!-- 		<div include-markdown='/virtual_root/sections/Home/Home.md'></div> -->
+
+	<!-- 		<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ylu289/30min'});return false;">Schedule time with me</a> -->
 
-		<h1>Welcome</h1>
-		<div class="calendly-inline-widget" data-url="https://calendly.com/ylu289" style="min-width:70%;height:80vh"></div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+	<h1>Welcome</h1>
+	<!-- 		<div class="calendly-inline-widget" data-url="https://calendly.com/ylu289" style="min-width:70%;height:80vh"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script> -->
+	<comment style='font-size:0.7em'>My Schedule<br>red line:now | white:free | gray:busy</comment>
+	<div id="MyCalendar" style="text-align:center; width:100%;height:75vh">
+<!-- 				<iframe id="MyCalendar"  src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQdlGlG4RvvtXD4h4c-Op8hBIb0aOk0LP-OrYRMAF0RM7GvqTmrYBqrPwal0CZKL3J-OGKt3Cyf8VqW/pub?gid=0&single=true&output=pdf" width="100%"  height="100%"></iframe>			 -->
+		<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQdlGlG4RvvtXD4h4c-Op8hBIb0aOk0LP-OrYRMAF0RM7GvqTmrYBqrPwal0CZKL3J-OGKt3Cyf8VqW/pubhtml?widget=true&amp;headers=false" width="100%" height="100%"></iframe>
+		
+<!-- 		<iframe id="MyCalendar"
+			src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQdlGlG4RvvtXD4h4c-Op8hBIb0aOk0LP-OrYRMAF0RM7GvqTmrYBqrPwal0CZKL3J-OGKt3Cyf8VqW/pubhtml?gid=0&amp;single=false&amp;widget=false&amp;headers=false"
+			width="100%" height="100%" style="border: 0px solid;"></iframe>
 
-		<!-- Calendly badge widget begin -->
-<!-- <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+	</div> -->
+	<div style="text-align:center; width:100%">
+	</div>
+
+	<!-- Calendly badge widget begin -->
+	<!-- <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/ylu289/30min', text: 'Schedule time with me', color: '#0069ff', textColor: '#ffffff', branding: true }); }</script> -->
-<!-- Calendly badge widget end -->
-		<div style="text-align:center; width:100%;height:100vh">
-		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdfm19UIe94n78iUeNkuc9NGhKHlcEGMbE6uQJUrmK0kiarlA/viewform?embedded=true" width="100%"  height="100%" frameborder="0px" marginheight="0" marginwidth="0">Loading…</iframe>
-		</div>
-    
+	<!-- Calendly badge widget end -->
+	<div style="text-align:center; width:100%;height:100vh">
+		<iframe
+			src="https://docs.google.com/forms/d/e/1FAIpQLSdfm19UIe94n78iUeNkuc9NGhKHlcEGMbE6uQJUrmK0kiarlA/viewform?embedded=true"
+			width="100%" height="100%" frameborder="0px" marginheight="0" marginwidth="0">Loading…</iframe>
+	</div>
 
-    
-  </body>
+
+
+</body>
 
 <!--<div include-html = "/virtual_root/elements/load_css.html"></div>
 <link href="/virtual_root/CSS/main.css" rel="stylesheet" type="text/css" />    
@@ -51,28 +65,40 @@
 
 
 <script>
-  main();
-/*
-var myVar = setInterval(function(){
-  try{
-    main();
-    clearInterval(myVar);
-    console.log('Fully loaded!');
-  }
-  catch(e){    
-    console.log('Reload: awaiting page loaded.');
-  }
-  }, 100);
-  /*
-setTimeout(function(){bgm('play')}, bgm('wait'));*/
-//setTimeout(function(){bgm('play')}, 5000);
+	main();
+	/*
+	var myVar = setInterval(function(){
+	  try{
+		main();
+		clearInterval(myVar);
+		console.log('Fully loaded!');
+	  }
+	  catch(e){    
+		console.log('Reload: awaiting page loaded.');
+	  }
+	  }, 100);
+	  /*
+	setTimeout(function(){bgm('play')}, bgm('wait'));*/
+	//setTimeout(function(){bgm('play')}, 5000);
 
 
-/*
-window.addEventListener('load', (event) => {
-      setTimeout(function(){highlight_navbar()}, 1000);
-      });
-*/
+	/*
+	window.addEventListener('load', (event) => {
+		  setTimeout(function(){highlight_navbar()}, 1000);
+		  });
+	*/
+	var myVar = setInterval(function () {
+		try {
+			reloadIFrame();
+		}
+		catch (e) {
+			console.log(e);
+		}
+	}, 1*60*1000);
+	function reloadIFrame() {
+		let url = document.getElementById("MyCalendar").getElementsByTagName('iframe')[0].src;
+		document.getElementById("MyCalendar").getElementsByTagName('iframe')[0].src = url;
+	}
 </script>
 
 </html>
